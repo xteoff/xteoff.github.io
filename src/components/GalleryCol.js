@@ -8,16 +8,16 @@ function GalleryCol(){
             </div>
             <div className="flex flex-col md:flex-row gap-3"> 
                 <div className="display-none-1st-img-on-hover">
-                    <img src="/media/Coll1.SVG" className="h-fit rounded-2xl" alt="" />
-                    <img src="/media/Coll1_dop.SVG" className="h-fit rounded-2xl object-cover" alt="" />
+                    <img src="/media/Coll1.svg" className="h-fit rounded-2xl" alt="" />
+                    <img src="/media/Coll1_dop.svg" className="h-fit rounded-2xl object-cover" alt="" />
                 </div>
                 <div className="display-none-1st-img-on-hover">
-                    <img src="/media/Coll2.SVG" className="h-fit rounded-2xl" alt="" />
-                    <img src="/media/Coll2_dop.SVG" className="h-fit rounded-2xl object-cover" alt="" />
+                    <img src="/media/Coll2.svg" className="h-fit rounded-2xl" alt="" />
+                    <img src="/media/Coll2_dop.svg" className="h-fit rounded-2xl object-cover" alt="" />
                 </div>
                 <div className="display-none-1st-img-on-hover">
-                    <img src="/media/Coll3.SVG" className="h-fit rounded-2xl" alt="" />
-                    <img src="/media/Coll3_dop.SVG" className="h-fit rounded-2xl object-cover" alt="" />
+                    <img src="/media/Coll3.svg" className="h-fit rounded-2xl" alt="" />
+                    <img src="/media/Coll3_dop.svg" className="h-fit rounded-2xl object-cover" alt="" />
                 </div>
             </div>
             <div>

@@ -27,7 +27,7 @@ function Loyal(){
                 </div>
             </div>    
             <div className="w-full h-92">
-                <img src="/media/promo_loyal.SVG" className="w-full h-full object-top object-cover rounded-t-2xl lg:rounded-tl-none lg:rounded-r-2xl" alt="" />
+                <img src="/media/promo_loyal.svg" className="w-full h-full object-top object-cover rounded-t-2xl lg:rounded-tl-none lg:rounded-r-2xl" alt="" />
             </div>
         </promo>
     )

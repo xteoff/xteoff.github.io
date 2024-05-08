@@ -8,7 +8,7 @@ function OtherThings(){
             <div className="flex flex-col gap-8">
                 <promo className="flex flex-col lg:flex-row justify-center text-black lg:h-[400px] px-5 lg:px-16">
                     <div className="w-full">
-                        <img src="/media/pal.SVG" className="w-full h-full object-cover rounded-t-xl lg:rounded-tr-none lg:rounded-l-xl" alt="" />
+                        <img src="/media/pal.svg" className="w-full h-full object-cover rounded-t-xl lg:rounded-tr-none lg:rounded-l-xl" alt="" />
                     </div>
                     <div className="w-full gap-6 items-center flex justify-center flex-col text-center bg-red-100 py-16 px-16 
                         rounded-b-xl lg:rounded-bl-none lg:rounded-r-xl">
