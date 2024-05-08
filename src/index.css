@@ -1,13 +1,34 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url(https://fonts-online.ru/fonts/gotham-pro);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::-webkit-scrollbar{
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #873D3D;
+  border-radius: 100px;
+  border: 3px solid #ffffff;
+}
+
+body {
+  font-family: "Gotham Pro";
+}
+
+.slick-dots {
+  position: static;
+}
+
+.display-none-1st-img-on-hover:not(:hover) img:nth-child(2) {
+  display: none;
+}
+
+.display-none-1st-img-on-hover:hover img:nth-child(1) {
+  display: none;
 }
