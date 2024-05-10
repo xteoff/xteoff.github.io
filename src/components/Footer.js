@@ -58,15 +58,10 @@ function Footer() {
           <div className="font-medium text-lg">
             Подписаться на рассылку:
           </div>
-          <div className="flex gap-4"> 
+          <div className="flex flex-col md:flex-row gap-4"> 
             <input type="email" className="p-4 w-96 border border-solid border-black rounded-lg" placeholder="Электронный адрес" />
             <button className="p-4 border border-solid border-black rounded-lg hover:bg-[rgb(237,230,221)] hover:ease-in-out duration-300">Отправить</button>
           </div>
-        </div>
-        <div className="flex flex-row gap-8 cursor-pointer">
-          <img src="/media/icons/vk2.png" alt="" />
-          <img src="/media/icons/youtube2.png" alt="" />
-          <img src="/media/icons/inst2.png" alt="" />
         </div>
         <div className="flex gap-8 text-center">
           {linksJsx}

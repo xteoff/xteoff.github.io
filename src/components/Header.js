@@ -40,13 +40,13 @@ function Header() {
 
 
     return (
-        <header className="flex justify-between items-center bg-red-100 h-24 px-5 md:px-20">
+        <header className="flex flex-row sm:justify-between items-center bg-red-100 h-24 px-5 md:px-20">
             <div className="w-10 flex-initial">
                 <RouterLink to="/shopping_card">
                     {cartSvg}
                 </RouterLink>
             </div>
-            <nav className="flex gap-14">
+            <nav className="flex gap-6 sm:gap-14 text-sm sm:text-lg px-3">
                 {linksJsx}
             </nav>
             <div className="w-10">

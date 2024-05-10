@@ -11,14 +11,14 @@ function Loyal(){
                 <div className="text-xl text-[rgb(237,230,221)] font-extralight">
                     Оформите подписку и получайте каждый месяц эксклюзивный набор косметики 
                 </div>
-                <div className="flex flex-row gap-3 text-xl">
-                    <button className="flex p-4 border bg-[rgb(237,230,221)] rounded-full px-4 py-3
+                <div className="flex flex-col sm:flex-row gap-3 text-xl">
+                    <button className="flex place-content-center p-4 border bg-[rgb(237,230,221)] rounded-full px-5 py-4
                         hover:bg-transparent hover:ease-in-out duration-300 hover:border-[rgb(237,230,221)] hover:text-[rgb(237,230,221)]">
                         <Link to = "/sign_up">
                             Оформить
                         </Link>
                     </button>
-                    <button className="flex p-4 border border-solid border-[rgb(237,230,221)] text-[rgb(237,230,221)] rounded-full px-4 py-3
+                    <button className="flex place-content-center p-4 border border-solid border-[rgb(237,230,221)] text-[rgb(237,230,221)] rounded-full px-5 py-4
                         hover:bg-[rgb(237,230,221)] hover:ease-in-out duration-300 hover:text-black">
                         <Link to = "/promotions">
                             Узнать больше
