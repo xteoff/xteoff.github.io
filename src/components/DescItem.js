@@ -27,12 +27,12 @@ function DescItem() {
                         4 150 р.   <div className="line-through text-gray-600">6 500 р.</div> 
                     </div>
                     <div className="text-red-50">
-                        Сосать пипку 
+                        Текст
                     </div>
                     <div>
                         <button className="w-64 p-4 border border-solid border-black rounded-full
                             hover:bg-[rgb(135,61,61)] hover:text-white hover:border-transparent hover:ease-in-out duration-300">
-                            <Link to="/zatrolen_loh">
+                            <Link to="/shopping_card">
                                 Добавить в корзину
                             </Link>
                         </button>
