@@ -64,7 +64,7 @@ function DescItem() {
                         Текст
                     </div>
                     <div>
-                        <button onClick={openModal}className="w-64 p-4 border border-solid border-black rounded-full
+                        <button onClick={openModal} className="w-64 p-4 border border-solid border-black rounded-full
                             hover:bg-[rgb(135,61,61)] hover:text-white hover:border-transparent hover:ease-in-out duration-300">
                                 Добавить в корзину
                         </button>
@@ -91,6 +91,5 @@ function DescItem() {
         </desc>
     )
 }
-
 
 export default DescItem; 
