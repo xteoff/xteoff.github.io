@@ -1,6 +1,40 @@
 import { Link, useNavigate } from "react-router-dom";
+import React, { useState } from 'react';
+import Modal from 'react-modal';
+
 
 function DescItem() {
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+
+    const openModal = () => {
+        setModalIsOpen(true);
+    };
+
+    const closeModal = () => {
+        setModalIsOpen(false);
+    };
+
+    const modalContent = (
+        <div className="flex gap-7 flex-col place-content-center h-full justify-center py-20 sm:px-20 bg-red-50">
+            <div className="flex absolute top-16 right-16 justify-end cursor-pointer">
+                <img src="media/close.svg" className="w-8 h-8" alt="x" onClick={closeModal} />
+            </div>
+            <div className="flex gap-10 flex-col place-content-center justify-center">
+                <div className="flex justify-center text-center text-4xl text-black font-bold">
+                    Товар успешно добавлен в корзину!
+                </div>
+                <div className="flex justify-center">
+                    <button className="flex justify-center w-64 p-4 border border-solid border-black rounded-full
+                        hover:bg-[rgb(135,61,61)] hover:text-white hover:border-transparent hover:ease-in-out duration-300">
+                        <Link to="/shopping_card">
+                            Перейти в корзину
+                        </Link>
+                    </button>
+                </div>
+            </div>
+        </div>
+    );
+
 
     let history = useNavigate();
     function handleClick() {
@@ -30,12 +64,13 @@ function DescItem() {
                         Текст
                     </div>
                     <div>
-                        <button className="w-64 p-4 border border-solid border-black rounded-full
+                        <button onClick={openModal}className="w-64 p-4 border border-solid border-black rounded-full
                             hover:bg-[rgb(135,61,61)] hover:text-white hover:border-transparent hover:ease-in-out duration-300">
-                            <Link to="/shopping_card">
                                 Добавить в корзину
-                            </Link>
                         </button>
+                        <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
+                            {modalContent}
+                        </Modal>
                     </div>
                     <div className="flex flex-col text-left text-xl text-black font-extralight gap-3">
                         <div>
@@ -57,4 +92,5 @@ function DescItem() {
     )
 }
 
-export default DescItem;
+
+export default DescItem; 
