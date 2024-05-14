@@ -4,8 +4,15 @@
 
 @font-face {
   font-family: "Gotham Pro";
-  src: url(https://fonts-online.ru/fonts/gotham-pro);
+  src: url("./font/gothampro_light.ttf");
 }
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("./font/gothampro.ttf");
+}
+
+
 
 ::-webkit-scrollbar{
   width: 15px;
