@@ -38,6 +38,9 @@ const sogl = [
   },
 ];
 
+function alr(){
+  alert("Вы успешно подписались на информационную рассылку.");
+}
 
 function Footer() {
   const linksJsx = links.map(
@@ -60,7 +63,7 @@ function Footer() {
           </div>
           <div className="flex flex-col md:flex-row gap-4"> 
             <input type="email" className="p-4 w-96 border border-solid border-black rounded-lg" placeholder="Электронный адрес" />
-            <button className="p-4 border border-solid border-black rounded-lg hover:bg-[rgb(237,230,221)] hover:ease-in-out duration-300">Отправить</button>
+            <button className="p-4 border border-solid border-black rounded-lg hover:bg-[rgb(237,230,221)] hover:ease-in-out duration-300" onClick={alr}>Отправить</button>
           </div>
         </div>
         <div className="flex gap-8 text-center">
@@ -70,7 +73,7 @@ function Footer() {
           {soglJsx}
         </div>
         <div className="text-xs text-center">
-          © 2024, все права защищенны
+          © 2025, все права защищенны
         </div>
     </footer>
   )
